@@ -8,6 +8,48 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <RadioGroup
+        android:id="@+id/rodzaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rodzaj_espresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espresso"
+            />
+
+        <RadioButton
+            android:id="@+id/rodzaj_cappuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cappuccino"
+            />
+
+        <RadioButton
+            android:id="@+id/rodzaj_latte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latte"
+            />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mleko"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cukier"
+        />
+
+
+
 
 
 </LinearLayout>
