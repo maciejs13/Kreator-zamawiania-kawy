@@ -8,6 +8,18 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:text="Zamów kawę"
+        android:background="#C9DCDB"
+        android:padding="10dp"
+
+    />
+
     <RadioGroup
         android:id="@+id/rodzaj"
         android:layout_width="wrap_content"
@@ -18,38 +30,101 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Espresso"
-            />
+            android:layout_margin="2dp"
+        />
 
         <RadioButton
             android:id="@+id/rodzaj_cappuccino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cappuccino"
-            />
+            android:layout_margin="2dp"
+        />
 
         <RadioButton
             android:id="@+id/rodzaj_latte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Latte"
-            />
+            android:layout_margin="2dp"
+        />
 
     </RadioGroup>
 
-    <CheckBox
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mleko"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+
+        >
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mleko"
+            android:layout_margin="10dp"
         />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cukier"
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cukier"
+            android:layout_margin="10dp"
         />
 
 
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/ilosc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+    />
+
+    <SeekBar
+        android:id="@+id/ilosc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="1"
+        android:progressTint="#009688"
+        android:thumbTint="#057A6C"
+        android:layout_marginTop="5dp"
+    />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/zamow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zamów swoją kawę"
+        android:backgroundTint="#009688"
+        android:layout_margin="15dp"
+    />
+
+    <ImageView
+        android:id="@+id/obrazek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Twoja Kawa"
+
+    />
 
 
 </LinearLayout>
